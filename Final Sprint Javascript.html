@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON Data</title>
+  
+</head>
+<body>
+  <h1>JSON Data</h1>
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Hobbies</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script>
+    // read the JSON file
+    fetch('people.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data); // log the data to the console
+
+        // create HTML table rows for each object in the array
+        const rows = data.map(obj => `
+         <br> <tr><br>
+            <td>${obj.name}</td>
+            <td>${obj.age}</td>
+            <td>${obj.hobbies}</td>
+          </tr>
+        `);
+
+        // add the rows to the table
+        document.querySelector('#data-table tbody').innerHTML = rows.join('');
+      });
+  </script>
+</body>
+</html>

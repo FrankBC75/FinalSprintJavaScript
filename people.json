@@ -1,0 +1,40 @@
+[
+  {
+    "name": "John",
+    "age": 30,
+    "is Married": false,
+    "hobbies": ["reading", "movies", "music"]
+  },
+  {
+    "name": "Jane",
+    "age": 25,
+    "is Married": true,
+    "hobbies": ["sports", "traveling"]
+  },
+  {
+    "name": "Bob",
+    "age": 40,
+    "is Married": true,
+    "hobbies": ["cooking", "gardening"]
+  },
+  {
+    "name": "Alice",
+    "age": 35,
+    "is Married": false,
+    "hobbies": ["painting", "hiking"]
+  },
+  {
+    "name": "Mike",
+    "age": 28,
+    "is Married": false,
+    "hobbies": ["coding", "gaming"]
+  },
+
+
+  {
+    "name": "Honey",
+    "age": 28,
+    "is not Married": false,
+    "hobbies": ["eating", "being annoying"]
+  }
+  ]
